@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "isomorphic-fetch": "^3.0.0",
+    "pg": "^8.8.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "name": "inf303",
+  "description": "��#\u0000 \u0000i\u0000n\u0000f\u00003\u00000\u00003\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigitopan/inf303.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yigitopan/inf303/issues"
+  },
+  "homepage": "https://github.com/yigitopan/inf303#readme"
+}
