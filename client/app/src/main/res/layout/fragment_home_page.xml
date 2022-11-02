@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomePageFragment">
+
+
+    <TextView
+        android:id="@+id/sonDakika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="source-sans-pro"
+        android:text="Son Dakika"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hepsiniGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="source-sans-pro"
+        android:textSize = "14sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:text="Hepsini Gör"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/sliderView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerInParent="true"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"></com.smarteist.autoimageslider.SliderView>
+
+    <TextView
+        android:id="@+id/haberlerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="source-sans-pro"
+        android:textSize = "20sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:text="Haberler"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderView"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
+        android:id="@+id/hepsiniGorTumHaberler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="source-sans-pro"
+        android:textSize = "14sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:text="Hepsini Gör"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderView"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderView"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/siyasetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_btn"
+                android:text="Siyaset"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/gundemButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_btn"
+                android:text="Gündem"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_btn"
+                android:text="Button"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_btn"
+                android:text="Button"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_btn"
+                android:text="Button"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape_btn"
+                android:text="Button"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
